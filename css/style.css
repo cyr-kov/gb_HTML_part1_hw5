@@ -24,7 +24,6 @@ a:hover{
 }
 
 #menu li{
-    /*float:left;*/
     margin-left: 0;
     list-style-type: none;
     display:inline-block;
@@ -64,3 +63,23 @@ h2 h2 h2+p{
     text-align:left;
 }
 
+ul.goodsFeatures li{
+    list-style-image: url(../images/list-mark.png);
+    text-decoration-style: double;
+    text-decoration-color: #9999f9;
+    text-decoration-line: underline;
+    color: #207070;
+    font-style: oblique;
+}
+
+a[target="_blank"] img{
+    border-radius:40% ;
+    border: 2px outset royalblue;
+
+}
+
+a[target="_blank"],a[target="_blank"]:hover {
+    text-decoration-style: unset;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0);
+}
