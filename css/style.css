@@ -73,13 +73,38 @@ ul.goodsFeatures li{
 }
 
 a[target="_blank"] img{
-    border-radius:40% ;
-    border: 2px outset royalblue;
+border-radius:40% ;
+width:180px;
+}
 
+a[target="_blank"][href*="blue"] img{
+    border: 2px outset royalblue;
+}
+a[target="_blank"][href*="green"] img{
+    border: 2px outset green;
+}
+
+a[target="_blank"][href*="red"] img{
+    border: 2px outset red;
 }
 
 a[target="_blank"],a[target="_blank"]:hover {
     text-decoration-style: unset;
     text-decoration: none;
     background-color: rgba(0,0,0,0);
+}
+
+form input{
+    height:28px;
+    width:360px;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+form textarea{
+    width:100%;
+    font-style: italic;
+    color: #7979f9;
+    font-size:16px;
+    margin-bottom:10px;
 }
