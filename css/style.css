@@ -2,6 +2,22 @@ body {
     background-color: #f8f8f8;
 }
 
+img[alt="Freedom"]{
+    height: 350px;
+}
+
+#container,footer{
+    width: 1000px;
+    margin:0 auto;
+}
+
+a {
+    color: royalblue;
+    font-family: sans-serif ;
+    font-style: oblique;
+    font-size: 22px;
+}
+
 #menu li{
     float:left;
     margin-left: 50px;
