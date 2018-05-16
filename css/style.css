@@ -18,6 +18,10 @@ a {
     font-size: 22px;
 }
 
+a:hover{
+    color:
+}
+
 #menu li{
     float:left;
     margin-left: 50px;
