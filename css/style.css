@@ -80,7 +80,7 @@ h2 h2 h2+p{
     text-align:left;
 }
 
-ul.goodsFeatures li{
+ul.mark li{
     list-style-image: url(../images/list-mark.png);
     text-decoration-style: double;
     text-decoration-color: #9999f9;
@@ -105,6 +105,16 @@ a[target="_blank"][href*="red"] img{
     border: 2px outset red;
 }
 
+a[target="_blank"][href*="red"]:hover img{
+    border:  2px outset rgba(0,0,0,0);
+}
+a[target="_blank"][href*="green"]:hover img{
+    border:  2px outset rgba(0,0,0,0);
+}
+a[target="_blank"][href*="blue"]:hover img{
+    border:  2px outset rgba(0,0,0,0);
+}
+
 a[target="_blank"],a[target="_blank"]:hover {
     text-decoration-style: unset;
     text-decoration: none;
@@ -116,6 +126,12 @@ form input{
     width:360px;
     font-size:20px;
     margin-bottom:10px;
+    text-transform:capitalize ;
+}
+
+form input[type=email]:focus{
+    color:#feffb3;
+    background-color:#4c4974 ;
 }
 
 form textarea{
@@ -124,4 +140,31 @@ form textarea{
     color: #7979f9;
     font-size:16px;
     margin-bottom:10px;
+    text-transform:capitalize ;
+}
+
+.product p:first-letter{
+    font-size:48px;
+    font-style: italic;
+    font-weight: 400;
+    color:#4c4974;
+}
+
+.blue{
+    color:blue; /*кажется на первом уроке было  предупреждение так не делать*/
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table td,th{
+    border-color: #b9b9f9;
+    border-style: solid;
 }
