@@ -167,4 +167,10 @@ table{
 table td,th{
     border-color: #b9b9f9;
     border-style: solid;
+    height:40px;
+}
+
+th{
+    height:82px;
+    min-width: 110px;
 }
