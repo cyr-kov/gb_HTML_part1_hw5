@@ -1,17 +1,37 @@
 body {
     background-color: #f8f8f8;
+    margin:0;
+    padding:0;
+}
 
+.header{
+    height:232px;
 }
 
 img[alt="Freedom"]{
     width: 1000px;
+    display:block;
 }
 
+.logo_img{
+    position:absolute;
+    top:103px;
+    left:20px;
+}
 
+.logo_img img{
+    height:90px;
+}
 
-#container,#menu,.logo_img{
+.container,.banner_layer{
     width: 1000px;
     margin:0 auto;
+}
+
+#menu {
+    position:absolute;
+    top:148px;
+    right:0;
 }
 /* gradient 4c4974 dd8754 c34435*/
 
@@ -19,13 +39,20 @@ img[alt="Freedom"]{
     background: -moz-linear-gradient(top, #4c4974 0%, #ab7c6a 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #4c4974 0%,#ab7c6a 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #4c4974 0%,#ab7c6a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
 }
-footer{
+.footer{
     background-color: #4b4971;
     color:#ffe598;
-    height:50px;
-    padding-left:100px;
-    line-height: 30px;
+    height:90px;
+    /*padding-left:100px;
+    line-height: 30px;*/
+}
+
+.footer div{
+    float:right;
+    margin-top: 20px;
+    margin-right:20px;
 }
 
 a {
@@ -41,9 +68,11 @@ a:hover{
 }
 
 #menu li{
-    margin-left: 0;
     list-style-type: none;
     display:inline-block;
+    background-color: rgba(254,254,180,0.8);
+    border:1px dotted #564d78;
+
 }
 
 #menu ul{
@@ -173,4 +202,8 @@ table td,th{
 th{
     height:82px;
     min-width: 110px;
+}
+
+.catalog img{
+    width:100px;
 }
