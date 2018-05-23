@@ -28,6 +28,10 @@ img[alt="Freedom"]{
     margin:0 auto;
 }
 
+.container {
+    position:relative;
+}
+
 #menu {
     position:absolute;
     top:148px;
@@ -45,8 +49,6 @@ img[alt="Freedom"]{
     background-color: #4b4971;
     color:#ffe598;
     height:90px;
-    /*padding-left:100px;
-    line-height: 30px;*/
 }
 
 .footer div{
@@ -93,6 +95,10 @@ h2{
     font-size:18px;
     font-weight:400;
     background-color:#eaeaea;
+}
+
+a+h2{
+    margin-left:180px;
 }
 
 a+h2+p{
@@ -172,15 +178,47 @@ form textarea{
     text-transform:capitalize ;
 }
 
-.product p:first-letter{
+.product h2+p:first-letter{
     font-size:48px;
     font-style: italic;
     font-weight: 400;
     color:#4c4974;
 }
 
+.product a{
+    display:block;
+    float:left;
+}
+
+.product button{
+    float:right;
+    height:30px;
+    width:80px;
+}
+
+.product button+p{
+     clear:both;
+}
+
+.product button:hover{
+    background: #d9dffc; /* Old browsers */
+    background: -moz-linear-gradient(top, #d9dffc 0%, #5d5c70 14%, #616070 83%, #a5a5a5 100%, #b5b9f4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d9dffc 0%,#5d5c70 14%,#616070 83%,#a5a5a5 100%,#b5b9f4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d9dffc 0%,#5d5c70 14%,#616070 83%,#a5a5a5 100%,#b5b9f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9dffc', endColorstr='#b5b9f4',GradientType=0 );
+    color:rgb(254,254,180);
+}
+
+.product button:active{
+    background: #b4e391; /* Old browsers */
+    background: -moz-linear-gradient(top, #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+}
+
 .blue{
-    color:blue; /*кажется на первом уроке было  предупреждение так не делать*/
+    color:blue;
 }
 .red{
     color:red;
@@ -194,8 +232,7 @@ table{
 }
 
 table td,th{
-    border-color: #b9b9f9;
-    border-style: solid;
+    border:2px solid #b9b9f9;
     height:40px;
 }
 
@@ -205,5 +242,28 @@ th{
 }
 
 .catalog img{
-    width:100px;
+    width:200px;
+    margin: 20px 0;
 }
+
+.catalogElement{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    margin-right:60px;
+    margin-bottom: 20px;
+    border:1px solid #d0d0d0;
+}
+
+.elementName{
+    background-color: #fff;
+}
+
+.catalogElement:nth-child(4n+1){
+    margin-right: 0;
+}
+
+.container{
+    background-color: #f1f1f1;
+}
+
